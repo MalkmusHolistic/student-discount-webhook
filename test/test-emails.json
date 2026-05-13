@@ -1,0 +1,148 @@
+{
+  "testEmails": [
+    {
+      "email": "student@uni-muenchen.de",
+      "expected": "valid",
+      "university": "Ludwig-Maximilians-Universität München",
+      "description": "Standard deutsche Universität"
+    },
+    {
+      "email": "john.doe@harvard.edu",
+      "expected": "valid",
+      "university": "Harvard University",
+      "description": "US Ivy League"
+    },
+    {
+      "email": "anna.mueller@tum.de",
+      "expected": "valid",
+      "university": "Technische Universität München",
+      "description": "TU München"
+    },
+    {
+      "email": "test@rwth-aachen.de",
+      "expected": "valid",
+      "university": "RWTH Aachen University",
+      "description": "RWTH Aachen"
+    },
+    {
+      "email": "student@oxford.ac.uk",
+      "expected": "valid",
+      "university": "University of Oxford",
+      "description": "UK Universität"
+    },
+    {
+      "email": "marie.curie@univ-paris-saclay.fr",
+      "expected": "valid",
+      "university": "Université Paris-Saclay",
+      "description": "Französische Universität"
+    },
+    {
+      "email": "carlo@polimi.it",
+      "expected": "valid",
+      "university": "Politecnico di Milano",
+      "description": "Italienische Universität"
+    },
+    {
+      "email": "lucas@upc.edu",
+      "expected": "valid",
+      "university": "Universitat Politècnica de Catalunya",
+      "description": "Spanische Technische Universität"
+    },
+    {
+      "email": "sarah@mit.edu",
+      "expected": "valid",
+      "university": "Massachusetts Institute of Technology",
+      "description": "MIT"
+    },
+    {
+      "email": "max@uni-heidelberg.de",
+      "expected": "valid",
+      "university": "Ruprecht-Karls-Universität Heidelberg",
+      "description": "Heidelberg"
+    },
+    {
+      "email": "test@gmail.com",
+      "expected": "invalid",
+      "university": null,
+      "description": "Gmail - keine Universität"
+    },
+    {
+      "email": "user@yahoo.de",
+      "expected": "invalid",
+      "university": null,
+      "description": "Webmail - keine Universität"
+    },
+    {
+      "email": "employee@company.com",
+      "expected": "invalid",
+      "university": null,
+      "description": "Firmen-E-Mail"
+    },
+    {
+      "email": "invalid-email-format",
+      "expected": "invalid",
+      "university": null,
+      "description": "Falsches Format"
+    },
+    {
+      "email": "@missing-local.de",
+      "expected": "invalid",
+      "university": null,
+      "description": "Fehlender Local-Part"
+    },
+    {
+      "email": "no-at-sign.de",
+      "expected": "invalid",
+      "university": null,
+      "description": "Kein @-Zeichen"
+    },
+    {
+      "email": "test@subdomain.uni-stuttgart.de",
+      "expected": "valid",
+      "university": "Universität Stuttgart",
+      "description": "Subdomain einer Universität"
+    },
+    {
+      "email": "postdoc@fh-wolfenbuettel.de",
+      "expected": "valid",
+      "university": "Hochschule Braunschweig/Wolfenbüttel",
+      "description": "Fachhochschule"
+    },
+    {
+      "email": "student@ethz.ch",
+      "expected": "valid",
+      "university": "Eidgenössische Technische Zürich",
+      "description": "ETH Zürich"
+    },
+    {
+      "email": "alex@unige.ch",
+      "expected": "valid",
+      "university": "University of Geneva",
+      "description": "Universität Genf"
+    },
+    {
+      "email": "test@outlook.de",
+      "expected": "invalid",
+      "university": null,
+      "description": "Outlook/Webmail"
+    },
+    {
+      "email": "",
+      "expected": "invalid",
+      "university": null,
+      "description": "Leere E-Mail"
+    },
+    {
+      "email": "student@uni-bielefeld.DE",
+      "expected": "valid",
+      "university": "Universität Bielefeld",
+      "description": "Großbuchstaben (Case-Insensitive)"
+    },
+    {
+      "email": "test@fake-university.xyz",
+      "expected": "invalid",
+      "university": null,
+      "description": "Nicht existierende Domain"
+    }
+  ]
+}
