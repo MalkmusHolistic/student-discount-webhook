@@ -118,8 +118,8 @@ app.post('/webhooks/klaviyo/profiles', async (req, res) => {
   try {
     const body = req.body;
 
-    // Extract email — Klaviyo sends it in data.attributes.email
-    const email = (body?.data?.attributes?.email || '').trim();
+    // Extract email — support both simple {email: "..."} and full Klaviyo webhook format
+    const email = (body?.data?.attributes?.email || body?.email || '').trim();
 
     if (!email) {
       return res.status(400).json({ error: 'No email in event' });
